@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import videofile from "../Models/videofile.js";
+import Videofiles from "../Models/videofile.js";
 
 export const likevideocontroller = async (req, res) => {
   const { id: _id } = req.params;
@@ -11,7 +11,7 @@ export const likevideocontroller = async (req, res) => {
   }
 
   try {
-    const updatelike = await videofile.findByIdAndUpdate(_id, {
+    const updatelike = await Videofiles.findByIdAndUpdate(_id, {
       $set: { Like: Like },
     });
     res.status(200).json(updatelike);

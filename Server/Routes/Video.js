@@ -19,6 +19,12 @@ import {
   likedvideocontroller,
   deletelikedvideo,
 } from "../Controllers/likedvideo.js";
+import {
+  deleteDownloadedVideo,
+  downloadedVideoController,
+  downloadVideoFile,
+  getAllDownloadedVideoController,
+} from "../Controllers/downloadvideo.js";
 
 const routes = express.Router();
 
@@ -47,5 +53,17 @@ routes.post("/likedvideo", auth, likedvideocontroller);
 routes.get("/getalllikedvideo", getalllikedvideocontroller);
 
 routes.delete("deletelikedvideo/:videoid/:viewer", auth, deletelikedvideo);
+
+routes.post("/downloadvideo", auth, downloadedVideoController);
+
+routes.get("/download_video/:id/:videoid", auth, downloadVideoFile);
+
+routes.get("/getalldownloadedvideo", auth, getAllDownloadedVideoController);
+
+routes.delete(
+  "/deletedownloadedvideo/:videoid/:viewer",
+  auth,
+  deleteDownloadedVideo
+);
 
 export default routes;

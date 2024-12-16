@@ -1,11 +1,11 @@
-import videofile from "../Models/videofile.js";
+import Videofiles from "../Models/videofile.js";
 
 export const uploadvideo = async (req, res) => {
   if (req.file === undefined) {
     res.status(404).json({ message: "Please upload a mp.4 video file only" });
   } else {
     try {
-      const file = new videofile({
+      const file = new Videofiles({
         videotitle: req.body.title,
         filename: req.file.originalname,
         filepath: req.file.path,
@@ -29,7 +29,7 @@ export const uploadvideo = async (req, res) => {
 
 export const getallvideos = async (req, res) => {
   try {
-    const files = await videofile.find();
+    const files = await Videofiles.find();
     res.status(200).send(files);
   } catch (error) {
     res.status(404).json(error.message);

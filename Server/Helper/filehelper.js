@@ -4,7 +4,7 @@ import multer from "multer";
 
 const storage = multer.diskStorage({
   destination: (req, res, cb) => {
-    cb(null, "uploads");
+    cb(null, "uploads/");
   },
   filename: (req, file, cb) => {
     cb(
@@ -14,13 +14,14 @@ const storage = multer.diskStorage({
   },
 });
 
-const filefilter = (req, file, cb) => {
+const fileFilter = (req, file, cb) => {
   if (file.mimetype === "video/mp4") {
     cb(null, true);
   } else {
     cb(null, false);
   }
 };
-const upload = multer({ storage: storage, fileFilter: filefilter });
+
+const upload = multer({ storage: storage, fileFilter: fileFilter });
 
 export default upload;

@@ -1,30 +1,34 @@
 import mongoose from "mongoose";
 
-const videofileschema = new mongoose.Schema(
+const videofileschema = mongoose.Schema(
   {
     videotitle: {
       type: String,
-      require: true,
+      required: true,
+      trim: true,
     },
     filename: {
       type: String,
-      require: true,
+      required: true,
+      trim: true,
     },
     filetype: {
       type: String,
-      require: true,
+      required: true,
+      enum: ["video/mp4", "video/webm", "video/ogg"],
     },
     filepath: {
       type: String,
-      require: true,
+      required: true,
     },
     filesize: {
-      type: String,
-      require: true,
+      type: Number,
+      required: true,
     },
     videochannel: {
       type: String,
-      require: true,
+      required: true,
+      trim: true,
     },
     Like: {
       type: Number,
@@ -36,6 +40,7 @@ const videofileschema = new mongoose.Schema(
     },
     uploader: {
       type: String,
+      required: true,
     },
     createdAt: {
       type: Date,

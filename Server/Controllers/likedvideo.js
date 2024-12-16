@@ -1,8 +1,8 @@
-import likedvideo from "../Models/likedvideo.js";
+import Likedvideo from "../Models/likedvideo.js";
 
 export const likedvideocontroller = async (req, res) => {
   const likedvideodata = req.body;
-  const addtolikedvideo = new likedvideo(likedvideodata);
+  const addtolikedvideo = new Likedvideo(likedvideodata);
   try {
     await addtolikedvideo.save();
     res.status(200).json("Added to watchlater");
@@ -14,7 +14,7 @@ export const likedvideocontroller = async (req, res) => {
 
 export const getalllikedvideocontroller = async (req, res) => {
   try {
-    const files = await likedvideo.find();
+    const files = await Likedvideo.find();
     res.status(200).send(files);
   } catch (error) {
     res.status(400).json(error.message);
@@ -25,7 +25,7 @@ export const deletelikedvideo = async (req, res) => {
   const { videoid: videoid, viewer: viewer } = req.params;
 
   try {
-    await likedvideo.findOneAndDelete({
+    await Likedvideo.findOneAndDelete({
       videoid: videoid,
       viewer: viewer,
     });

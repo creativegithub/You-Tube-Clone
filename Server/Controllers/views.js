@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import videofile from "../Models/videofile.js";
+import Videofiles from "../Models/videofile.js";
 
 export const viewscontroller = async (req, res) => {
   const { id: _id } = req.params;
@@ -9,9 +9,9 @@ export const viewscontroller = async (req, res) => {
   }
 
   try {
-    const files = await videofile.findById(_id);
+    const files = await Videofiles.findById(_id);
     const Views = files.views;
-    const updateview = await videofile.findByIdAndUpdate(_id, {
+    const updateview = await Videofiles.findByIdAndUpdate(_id, {
       $set: {
         views: Views + 1,
       },

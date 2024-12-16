@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import users from "../Models/Auth.js";
+import User from "../Models/Auth.js";
 
 export const updatechanneldata = async (req, res) => {
   const { id: _id } = req.params;
@@ -9,7 +9,7 @@ export const updatechanneldata = async (req, res) => {
     return res.status(400).send("Channel unavailable...");
   }
   try {
-    const updatedata = await users.findByIdAndUpdate(
+    const updatedata = await User.findByIdAndUpdate(
       _id,
       {
         $set: {
@@ -28,7 +28,7 @@ export const updatechanneldata = async (req, res) => {
 
 export const getallchannels = async (req, res) => {
   try {
-    const allchannels = await users.find();
+    const allchannels = await User.find();
     const allchanneldata = [];
     allchannels.forEach((channel) => {
       allchanneldata.push({
