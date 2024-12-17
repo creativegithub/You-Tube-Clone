@@ -1,0 +1,24 @@
+.Container_SearchList {
+  position: absolute;
+  background-color: var(--text-color);
+  width: 90.75%;
+  height: fit-content;
+  top: 2.7rem;
+  z-index: 91;
+}
+
+.Search_Item {
+  margin-right: 0.3rem;
+}
+
+.titleItem {
+  margin: 0;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.titleItem:hover {
+  background-color: var(--secondary-background-color);
+}

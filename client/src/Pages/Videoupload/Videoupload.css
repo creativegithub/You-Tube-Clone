@@ -1,0 +1,76 @@
+.container_VidUpload {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(video-bg);
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.container2_VidUpload {
+  position: relative;
+  width: 50%;
+  height: 80%;
+  margin: auto;
+  padding: 1rem;
+  background-color: var(--background-color);
+  color: var(--border-color);
+  border-radius: 1rem;
+  box-shadow: 2px 2px rgba(142, 142, 142, 0.681),
+    -2px -2px rgba(142, 142, 142, 0.681);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.ibox_div_VidUpload {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  color: #0070ac;
+}
+
+.ibox_VidUpload {
+  width: calc(50vw - 2rem);
+  margin: 1rem;
+  padding: 0.2rem;
+  font-size: larger;
+  background-color: transparent;
+  color: var(--text-color);
+  border-radius: 5px;
+  outline: none;
+  border: 0.2rem solid var(--border-color);
+}
+
+.btn_VidUpload {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-weight: bolder;
+  padding: 1rem;
+  border: 2px solid;
+}
+
+.btn_VidUpload:hover {
+  color: rgb(194, 126, 0);
+}
+
+.loader {
+  width: 9.375rem;
+  height: 9.375rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success_message {
+  margin-top: 1.25rem;
+  padding: 0.625rem;
+  color: crimson;
+  font-weight: bold;
+  text-align: center;
+}

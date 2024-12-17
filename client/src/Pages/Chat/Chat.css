@@ -1,0 +1,292 @@
+/* **************** CREATE GROUP PAGE ***************************** */
+
+.JoinPage {
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.JoinContainer {
+  width: 100%;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.JoinContainer > h1 {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  border-bottom: 0.2rem solid crimson;
+  text-align: center;
+  padding: 0.5rem;
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+
+.JoinContainer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.JoinContainer form label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinDetail {
+  color: rgb(255, 154, 174);
+  font-size: 1.5rem;
+  text-decoration: dashed;
+  font-weight: 700;
+}
+
+.joinInput {
+  width: 70%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin: 1rem;
+  box-sizing: border-box;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  display: none; /* Initially hide error messages */
+}
+
+.createBtn,
+.createGroupBtn {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: none;
+  color: var(--text-color);
+  font-family: "Roboto";
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: crimson;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.createBtn:hover,
+.createGroupBtn:hover {
+  background-color: rgb(180, 27, 58);
+}
+
+/* ************************* GROUPLIST PAGE ******************************* */
+.groupContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+}
+
+.groupContainer h2 {
+  font-size: 3rem;
+  padding: 0.5rem;
+  margin: 2rem;
+  border-bottom: 0.2rem solid crimson;
+}
+
+.groupDetail p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.groupLists {
+  width: 100%;
+}
+
+.groupList {
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-background-color);
+  margin: 1rem;
+  box-sizing: border-box;
+}
+
+.groupList strong {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.groupList p {
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.joinBtn {
+  width: 80%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  background-color: crimson;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: var(--text-color);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  color: var(--text-color);
+  font-size: 1rem;
+  background-color: crimson;
+  padding: 1rem;
+  margin-left: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  transition: all 0.3s;
+}
+
+.joinBtn:hover,
+.deleteBtn:hover {
+  background-color: rgb(156, 13, 42);
+}
+
+/* ****************** CHAT PAGE ************************** */
+
+.chatPage {
+  background-color: var(--primary-background-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatContainer {
+  background-color: var(--text-color);
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background-color: crimson;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.personsIcon {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  color: crimson;
+  background-color:white;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.header > h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0 1rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.2rem dashed rgb(255, 176, 176);
+  color:white;
+  box-shadow: rgba(255, 176, 176, 0.4) 0px 5px,
+    rgba(255, 176, 176, 0.3) 0px 10px, rgba(255, 176, 176, 0.2) 0px 15px,
+    rgba(255, 176, 176, 0.1) 0px 20px, rgba(255, 176, 176, 0.05) 0px 25px;
+  margin: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header .closeIcon {
+  color: white;
+  font-size: 3rem;
+  margin: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.header .closeIcon:hover {
+  transform: scale(1.2);
+}
+
+.chatBox {
+  height: 70%;
+  background-color: var(--secondary-color);
+  box-sizing: border-box;
+}
+
+.inputBox {
+  height: 15%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+#chatInput {
+  width: 80%;
+  border: none;
+  padding: 0rem 1rem;
+  box-sizing: border-box;
+  background-color: var(--secondary-color);
+  color: white;
+  outline: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  border-top: 0.2vmax solid var(--border-color);
+}
+
+.sendBtn {
+  background-color: crimson;
+  color: var(--text-color);
+  border: none;
+  width: 21%;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.sendIcon {
+  font-size: 3rem;
+  transition: all 0.3s;
+}
+
+.sendBtn:hover {
+  background-color: rgb(156, 13, 42);
+}
+
+.sendBtn:hover .sendIcon {
+  transform: translateX(10px);
+}

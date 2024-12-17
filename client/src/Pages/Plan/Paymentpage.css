@@ -1,0 +1,141 @@
+.paymentPage {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.paymentPage h1 {
+  padding: 1rem;
+  border-bottom: 0.2rem solid crimson;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.paymentProcess {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.paymentDetails {
+  margin: 1rem;
+  padding: 1rem;
+  width: calc(100% - 2rem);
+  background-color: var(--video-bg);
+  border-radius: 2rem;
+  color: var(--text-color);
+}
+
+.selectedPlan {
+  width: fit-content;
+  padding: 1.5rem;
+  background: hsla(38, 81%, 52%, 1);
+  color: var(--video-bg);
+  border-radius: 1rem;
+  margin: 1rem;
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(38, 81%, 52%, 1) 0%,
+    hsla(62, 76%, 64%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(38, 81%, 52%, 1) 0%,
+    hsla(62, 76%, 64%, 1) 100%
+  );
+
+  background: linear-gradient(
+    90deg,
+    hsla(38, 81%, 52%, 1) 0%,
+    hsla(62, 76%, 64%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E89D1F", endColorstr="#E4E95D", GradientType=1 );
+}
+
+.selectedPlanDetail {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.paymentMethods {
+  margin: 1rem;
+  padding: 1rem;
+  width: calc(100% - 2rem);
+  color: var(--text-color);
+}
+
+.paymentMethods div {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.paymentMethodBtn {
+  width: calc(100% - 4rem);
+  background-color: crimson;
+  padding: 0.8rem;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.icon {
+  margin: 0 1rem;
+}
+
+.selected-method {
+  width: calc(100% - 4rem);
+  margin: 0 1rem;
+}
+
+.selected-method h3 {
+  color: rgb(201, 201, 201);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.selected-method h3 strong {
+  color: rgb(255, 212, 220);
+  background-color: var(--border-color);
+  padding: 1rem;
+}
+
+.selectedMethodForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputFormDetail {
+  width: calc(100% - 5rem);
+  padding: 0.8rem;
+  font-size: 1.3rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--text-color);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.invoiceDetail {
+  padding: 1.25rem;
+  border: 0.2rem solid rgb(175, 76, 76);
+  background-color: var(--secondary-background-color);
+  color: rgb(125, 46, 46);
+  border-radius: 0.5rem;
+}
+
+.invoice h2 {
+  color: rgb(175, 76, 76);
+}

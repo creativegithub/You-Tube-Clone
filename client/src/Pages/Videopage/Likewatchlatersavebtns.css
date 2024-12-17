@@ -1,0 +1,28 @@
+.btns_cont_videoPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  flex-direction: row-reverse;
+  flex-grow: 5;
+  border-top: 0.2rem solid var(--border-color);
+}
+
+.btn_videoPage {
+  margin: auto 0;
+  display: flex;
+}
+
+.like_videoPage {
+  display: flex;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.like_videoPage b {
+  font-size: 1rem;
+}
+
+.btns_videoPage {
+  margin: 0 0.2rem;
+}

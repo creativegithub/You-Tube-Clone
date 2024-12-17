@@ -1,0 +1,101 @@
+.container_leftSidebar {
+  background-color: var(--background-color);
+  width: 4.7rem;
+  height: calc(100vh - 3.55rem);
+  box-sizing: border-box;
+  overflow-y: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.icon_sidebar_div {
+  cursor: pointer;
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.icon_sidebar {
+  margin: auto;
+}
+
+.text_sidebar_icon {
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.85rem;
+  padding: 0.2rem;
+}
+
+.icon_sidebar_div:hover,
+.icon_sidebar_div.active {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+
+/* ***** Drawer Sidebar ***** */
+
+.container_DrawerLeftSidebar {
+  display: flex;
+  position: absolute;
+  z-index: 500;
+}
+
+.container2_DrawerLeftSidebar {
+  height: calc(100vh - 3.6rem);
+  overflow-y: auto;
+  background-color: var(--background-color);
+  width: 15rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.Drawer_leftSidebar,
+.libraryBtn_Drawerleftsidebar {
+  padding-top: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.icon_sidebar_div_menu {
+  display: flex;
+  margin: 0;
+}
+
+/* ***** SubScription Left Sidebar ***** */
+.subScriptions_lsdbar {
+  color: var(--text-color);
+}
+
+.subScriptions_lsdbar h3 {
+  text-decoration: underline;
+  margin: 20px 10px;
+}
+
+.chanel_lsdbar {
+  display: flex;
+  cursor: pointer;
+}
+
+.chanel_lsdbar:hover {
+  color: rgb(77, 77, 243);
+}
+
+.chanel_lsdbar p {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: grey;
+  border: 1px solid;
+  border-radius: 100%;
+}
+
+.chanel_lsdbar div {
+  margin: auto;
+  width: 60%;
+}
+
+.container3_DrawerLeftSidebar {
+  background-color: var(--video-bg);
+}

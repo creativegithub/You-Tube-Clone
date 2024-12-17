@@ -1,0 +1,57 @@
+.videoCallContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+}
+
+.videoCallContainer2 {
+  background-color: var(--video-box-bg);
+}
+
+.videoCallVideo {
+  width: 100%;
+  height: 90%;
+  object-fit: fill;
+  border: 0.1rem solid var(--border-color);
+}
+
+.videoCallUserDetail {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  margin-left: 1rem;
+}
+
+.videoCallbuttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem;
+}
+
+.videoCallbuttonContainer .videoCallbutton:disabled {
+  background-color: var(--secondary-background-color);
+  cursor: not-allowed;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  .videoCallbuttonContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .videoCallVideo {
+    border-radius: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .videoCallContainer {
+    height: 90%;
+  }
+}

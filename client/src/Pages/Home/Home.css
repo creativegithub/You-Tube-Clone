@@ -1,0 +1,22 @@
+.navigation_Home {
+  position: relative;
+  display: flex;
+  background-color: var(--video-box-bg);
+  color: var(--text-color);
+  position: sticky;
+  top: 0;
+  overflow-x: auto;
+  border-bottom: 2px solid var(--video-box-bg);
+}
+
+.btn_nav_Home {
+  background-color: var(--video-bg);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.btn_nav_Home:hover {
+  background-color: var(--primary-color);
+}

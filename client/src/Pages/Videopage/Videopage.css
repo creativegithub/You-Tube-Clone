@@ -1,0 +1,230 @@
+.container_videoPage {
+  position: relative;
+  background-color: var(--video-bg);
+  color: var(--text-color);
+  display: flex;
+}
+
+.video_display_screen_videoPage {
+  width: calc(100vw - 4.5rem - 35vw);
+  background-color: var(--primary-background-color);
+}
+
+.video_container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  padding-inline-start: 0.1rem;
+  background-color: var(--secondary-background-color);
+  border: 0.2rem solid transparent;
+}
+
+.video_ShowVideo_videoPage,
+.watch_time_message {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  padding-inline-start: 0.1rem;
+  background-color: var(--secondary-background-color);
+  border: 0.1rem solid var(--border-color);
+}
+
+.video_ShowVideo_videoPage {
+  position: relative;
+}
+
+.watch_time_message {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.watch_time_message p {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  color: gray;
+}
+
+.upgrade_plan {
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: crimson;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.video_details_videoPage {
+  border-bottom: 0.1rem solid var(--text-color);
+}
+
+.video_btns_title_videoPage_cont {
+  flex-grow: 1;
+  border-bottom: 0.2rem solid var(--border-color);
+}
+
+.video_title_videoPage {
+  margin: 0;
+  padding: 0.5rem 0.8rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.views_date_btns_videoPage {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 6.5rem - 35vw);
+  margin: 0.5rem 1rem;
+}
+
+.views_videoPage {
+  display: flex;
+  font-size: 0.8rem;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.channel_details_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: 0.1rem solid var(--border-color);
+}
+
+.chanel_details_videoPage {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.chanel_logo_videoPage {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem;
+  background-color: var(--primary-background-color);
+  border: 1px solid var(--text-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.chanel_logo_videoPage p {
+  margin: 0;
+  color: var(--text-color);
+  font-size: xx-large;
+}
+
+.channel_name_videoPage {
+  margin: auto 1rem;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.subscribe_btn {
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-color);
+  background-color: crimson;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all 3s ease-in-out;
+}
+
+.subscribe_btn:hover {
+  background-color: rgb(156, 0, 31);
+  text-decoration: underline;
+  color: var(--border-color);
+}
+
+.comments_videoPage {
+  width: 100%;
+  background-color: var(--background-color);
+  padding-inline-start: 0.5rem;
+  padding-inline-end: 0.5rem;
+  margin: 2rem 0;
+}
+
+.comments_videoPage > h2 > u {
+  font-size: 2rem;
+  color: var(--text-color);
+  padding: 0.5rem;
+}
+
+.moreVideoBar {
+  width: calc(100vw - 65vw);
+}
+
+.moreVideoBar h2 {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: rgb(88, 88, 88);
+  border-bottom: 0.1rem solid var(--text-color);
+}
+
+.related_videos_container {
+  width: 100%;
+  margin: 1rem;
+}
+
+.relatedvideo_box {
+  width: 93%;
+  height: 20rem;
+  background-color: var(--video-box-bg);
+  margin: 1rem 0;
+  border: 0.1rem solid transparent;
+}
+
+.realated_ShowVideo {
+  cursor: pointer;
+  margin: 0.4rem;
+  margin-bottom: 0;
+  width: calc(100% - 0.8rem);
+  overflow: hidden;
+  height: 70%;
+  border: 1px solid var(--border-color);
+}
+
+.action-icon {
+  position: absolute;
+  color: var(--video-bg);
+  font-size: 3.5rem;
+  pointer-events: none;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+/* Positioning for left, right, and center */
+.action-icon.left_tapMsg {
+  left: 20%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.action-icon.right_tapMsg {
+  right: 20%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.action-icon.center_tapMsg {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
