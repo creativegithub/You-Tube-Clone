@@ -105,20 +105,21 @@ export const login = async (req, res) => {
         token,
         message: "Login successful. Please update your phone number.",
         requiresPhoneNumber: true,
+        otpSentViaEmail: false, // No OTP sent
       });
     }
 
     // Send OTP
     const otpResponse = await sendOtp(existingUser.phoneNumber, email, state);
 
-    if (!otpResponse) {
-      return res.status(500).json({ message: "Failed to send OTP." });
-    }
+    // console.log("SEND OTP RESPONSE :-", otpResponse);
 
+    // Indicate if OTP was successfully sent via email or SMS
     return res.status(200).json({
       result: existingUser,
       token,
       message: "Login successful. OTP sent!",
+      otpSentViaEmail: allowedStates.includes(state), // Check if OTP was sent via email
     });
   } catch (error) {
     console.error("Error in Login:", error);
