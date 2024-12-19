@@ -85,7 +85,7 @@ export const downloadVideoFile = async (req, res) => {
     }
 
     // Proceed to download the video
-    const videoPath = path.join(__dirname, "../uploads", video.filepath);
+    const videoPath = path.join(__dirname, "../", video.filepath);
 
     // Check if video file exists
     fs.access(videoPath, fs.constants.F_OK, (err) => {
