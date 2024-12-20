@@ -47,7 +47,7 @@ function Drawersidebar({ toggleDrawer, toggleDrawerSidebar }) {
               <div className="text_sidebar_icon">Shorts</div>
             </div>
           </NavLink>
-          <NavLink to={"/Subscriptions"} className="icon_sidebar_div">
+          <NavLink to={"/Plan"} className="icon_sidebar_div">
             <div className="icon_sidebar_div_menu">
               <MdOutlineSubscriptions
                 size={22}
