@@ -25,14 +25,14 @@ function Leftsidebar() {
         <SiYoutubeshorts size={22} className="icon_sidebar" />
         <div className="text_sidebar_icon">Shorts</div>
       </div>
-      <div className="icon_sidebar_div">
+      <NavLink to={"/Plan"} className="icon_sidebar_div">
         <MdOutlineSubscriptions size={22} className="icon_sidebar" />
         <div
           className="text_sidebar_icon"
           style={{ fontSize: "10px", padding: "0" }}
         >
           Subsrciptions
-        </div>
+        </NavLink>
       </div>
       <NavLink to={"/Library"} className="icon_sidebar_div">
         <MdOutlineVideoLibrary size={22} className="icon_sidebar" />
